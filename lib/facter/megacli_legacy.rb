@@ -1,5 +1,7 @@
 # Legacy versions of MegaCLI require different arguments to determine certain
 # software and firmware versions.
+require 'puppet/util/package'
+
 Facter.add(:megacli_legacy) do
   megacli = Facter.value(:megacli)
   megacli_version = Facter.value(:megacli_version)
