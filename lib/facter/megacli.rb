@@ -1,7 +1,7 @@
 Facter.add(:megacli) do
   confine :kernel => :linux
 
-  megacli_binaries = %w(MegaCli megacli)
+  megacli_binaries = %w(MegaCli megacli storcli)
 
   setcode do
     path = nil
